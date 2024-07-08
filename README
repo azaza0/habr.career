@@ -1,0 +1,26 @@
+Краткая мануалка по запуску проекта
+
+1. Открыть проект через вс код (желательно)
+2. Перейти в директорию папки frontend через cd frontend
+3. Выполнить в консоли команду npm i, дождаться окончания загрузки всех необходимых модулей, после переходить к следующему пункту
+4. Перейти обратно в корневую директорию проекта использовав команду cd.. в консоли
+5. Запустить докер десктоп если еще не был запущен
+6. Выполнить команду docker-compose up --build находясь в корневой директории проекта
+7. Далее ждать в логах такие надписи
+
+frontend-1  | Compiled with warnings.
+frontend-1  |
+frontend-1  | [eslint]
+frontend-1  | src/pages/SearchByPars.jsx
+frontend-1  |   Line 2:31:  'FormLabel' is defined but never used  no-unused-vars
+frontend-1  |
+frontend-1  | Search for the keywords to learn more about each warning.
+frontend-1  | To ignore, add // eslint-disable-next-line to the line before.
+frontend-1  |
+frontend-1  | WARNING in [eslint]
+frontend-1  | src/pages/SearchByPars.jsx
+frontend-1  |   Line 2:31:  'FormLabel' is defined but never used  no-unused-vars
+frontend-1  |
+frontend-1  | webpack compiled with 1 warning
+
+8. После проверить в браузере работоспособность сайта по адресу http://localhost:3000
